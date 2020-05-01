@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <title>PG2</title>
+        <META NAME="VIEWREPORT" CONTENT="device=device-width, initial-scale=1.0">
+
+    </HEAD>
+    <BODY STYLE="background-color: black;">
+        <BR>
+            <BR>
+                <BR>
+        <PRE STYLE="color: aliceblue;font-size: 20PX;">
+            #include<stdio.h>
+                int main() {
+                    int i, j, rows;
+                    printf("Enter number of rows: ");
+                    scanf("%d", &rows);
+                    for (i=1; i<=rows; ++i) {
+                        for (j=1; j<=i; ++j)
+                        { printf("* "); }
+                        printf("\n");
+                    }
+                    return 0;
+                }
+
+                OUTPUT :
+
+                *
+                * *
+                * * *
+                * * * *
+                * * * * *
+
+
+
+            #include<stdio.h>
+                int main() {
+                    int i,j,rows;
+                    printf("Enter number of rows: ");
+                    scanf("%d", &rows);
+                    for (i=1; i<=rows; ++i) {
+                        for (j=1; j<=i; ++j)
+                        { printf("%d ",j); }
+                            printf("\n");
+                    }
+                    return 0;
+                }
+
+                OUTPUT :
+
+                1
+                1 2
+                1 2 3
+                1 2 3 4
+                1 2 3 4 5
+
+
+
+            #include<stdio.h>
+                int main() {
+                    int i, j;
+                    char input, alphabet='A';
+                    printf("Enter the uppercase character you want to print in last row: ");
+                    scanf("%c", &input);
+                    for (i=1; i<=(input-'A'+1); ++i) {
+                        for (j=1; j<=i; ++j)
+                        { printf("%c", alphabet); }
+                            ++alphabet;
+                            printf("\n");
+                        }
+                        return 0;
+                }   
+                
+                OUTPUT : 
+
+                A
+                B B
+                C C C
+                D D D D
+                E E E E E
+
+            </PRE>
+        </BODY>
+        </HTML>
