@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<HTML LANG"US-EN">
+    <head>
+        <TITLE>FUN</TITLE>
+        <META NAME="VIEWREPORT" CONTENT="device=device-width, initial-scale=1.0">
+
+    </head>
+    <BODY STYLE="background-color: black;">
+        <div style="width: 100%;">
+            <br>
+            <br>
+            <img  style="float: left;height: 30px;width: 30px;" src="grasshopper.png">
+            <nav>
+                <B> <a  style="color: rgb(16, 127, 201);font-size: 25px;" href="index.html  ">HOME </a></B>
+                <B> <a  style="color: rgb(16, 127, 201);font-size: 25px;" href="myfirst.html  "><B><SPAN STYLE="color: rgb(238, 216, 216);">|</SPAN></B> CORONA-UPDATES </a></B>
+                <B> <a  style="color: rgb(16, 127, 201);font-size: 25px;" href="musicc.html  "><SPAN STYLE="color: rgb(238, 216, 216);">|</SPAN> SONGS </a></B>
+                <B> <a  style="color: rgb(16, 127, 201);font-size: 25px;" href="videooo.html  "><SPAN STYLE="color: rgb(238, 216, 216);">|</SPAN> VIDEOS </a></B>
+                <B> <a  style="color: rgb(16, 127, 201);font-size: 25px;" href="FUN.html"><SPAN STYLE="color: rgb(238, 216, 216);">|</SPAN>FUN </a></B>
+                <B> <a  style="color: rgb(16, 127, 201);font-size: 25px;" href="PROGRAMMING HUB.html"><SPAN STYLE="color: rgb(238, 216, 216);">|</SPAN>  PROGRAMMING HUB </a></B>
+
+             </nav>
+        </div>
+        <BR>
+            <HR>
+        <br>
+        <br>
+      <center> <div style="width: 50%;height:500px;background-color: darkslategrey;border-radius: 25PX;">
+        <br>
+        <h1 style="font-size: 50px;color: rgb(11, 216, 206);">PLEASE ENTER YOUR NAME</h1>
+        <br>
+       <h4 style="color: aliceblue;font-size: 30PX;">NAME : <input type="text" id="t1" style="font-size: 30PX;"></h4>
+        <br>
+      
+        <button  onclick="funn()" style="font-size: 40PX;"><b>SUBMIT</b></button>
+    
+    </div></center> 
+    <BR>
+        <BR>
+            <BR>
+                <BR>
+                    <BR>
+                        <BR>
+                            <BR>
+        <script>
+            function funn()
+            {
+                var g=document.getElementById("t1").value;
+                if(g=="")
+                {
+                    alert("please enter your name");
+                }
+                else
+                {
+                    alert("hello!! " + g  +".  welcome to fun games "+ " YOU'RE ALL SET TO GO.");
+                     document.getElementById("t1").value="";
+                     window.open("playgame.html");
+                }
+            }
+        </script>
+    </BODY>
+</HTML>
